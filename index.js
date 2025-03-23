@@ -1,13 +1,25 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for(i = 0; i < array.length; i++){
+    for(j = i + 1; j < array.length; j++){
+  if(array[i] + array[j] === target){
+    return true
+  }
+    }
+  }
+    return false
 }
 
 /* 
   Write the Big O time complexity of your function here
+  0(n)
 */
 
 /* 
   Add your pseudocode here
+   The function should return true if any two distinct numbers 
+   in the array add up to the target integer. 
+   If no such pair exists, the function should return false.
 */
 
 /*
